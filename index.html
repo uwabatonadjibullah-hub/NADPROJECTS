@@ -1,9 +1,9 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAD PROJECTS | I Loved the Impossible</title>
+    <title>NAD PROJECTS | Preserve the Nature</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -21,16 +21,16 @@ f<!DOCTYPE html>
             overflow-x: hidden;
         }
 
-        h1, h2, .playfair {
+        h1, h2, h3, .playfair {
             font-family: 'Playfair Display', serif;
         }
 
         .hero-gradient {
-            background: linear-gradient(to bottom, rgba(10, 10, 12, 0.4) 0%, rgba(10, 10, 12, 0.9) 80%, rgba(10, 10, 12, 1) 100%);
+            background: linear-gradient(to bottom, rgba(10, 10, 12, 0.4) 0%, rgba(10, 10, 12, 0.8) 80%, rgba(10, 10, 12, 1) 100%);
         }
 
         .parallax-bg {
-            background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000');
+            background-image: url('https://i.postimg.cc/VNNSg0Lw/Gemini-Generated-Image-jjjqoajjjqoajjjq.png');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -81,6 +81,24 @@ f<!DOCTYPE html>
             opacity: 0.3;
             line-height: 0;
         }
+
+        .video-frame-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.8);
+            background: #000;
+        }
+
+        .video-frame-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -92,11 +110,11 @@ f<!DOCTYPE html>
         </div>
         <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
             <a href="#" class="hover:text-[#c5a059] transition">Production</a>
-            <a href="#" class="hover:text-[#c5a059] transition">Portfolio</a>
-            <a href="#" class="hover:text-[#c5a059] transition">About</a>
+            <a href="#visuals" class="hover:text-[#c5a059] transition">Visuals</a>
+            <a href="#impact" class="hover:text-[#c5a059] transition">Impact</a>
         </div>
-        <a href=https://audiomack.com/iamnad/album/wheels-in-the-hills" class="px-6 py-2 border border-[#c5a059] text-[#c5a059] hover:bg-[#c5a059] hover:text-white transition uppercase text-xs tracking-tighter">
-            Read Story
+        <a href="https://audiomack.com/iamnad/album/wheels-in-the-hills" target="_blank" class="px-6 py-2 border border-[#c5a059] text-[#c5a059] hover:bg-[#c5a059] hover:text-white transition uppercase text-xs tracking-tighter">
+            Action Plan
         </a>
     </nav>
 
@@ -106,14 +124,14 @@ f<!DOCTYPE html>
         
         <div class="relative z-10 text-center px-4 max-w-4xl">
             <p class="uppercase tracking-[0.5em] text-[#c5a059] mb-4 text-sm font-semibold fade-in">Nadjibullah UWABATO Presents</p>
-            <h1 class="text-6xl md:text-8xl mb-6 font-bold text-white fade-in">I LOVED THE IMPOSSIBLE</h1>
-            <p class="italic text-xl md:text-2xl text-gray-300 font-light mb-8 fade-in">"Nakunze Urudashoboka"</p>
+            <h1 class="text-6xl md:text-8xl mb-6 font-bold text-white fade-in">PRESERVE THE NATURE</h1>
+            <p class="italic text-xl md:text-2xl text-gray-300 font-light mb-8 fade-in">"A Legacy for Generations"</p>
             <div class="flex flex-col md:flex-row justify-center gap-4 fade-in">
-                <a href="https://audiomack.com/iamnad/album/wheels-in-the-hills" target="_blank" class="btn-cinematic px-10 py-4 uppercase tracking-widest text-sm font-bold">
-                    Read the Full Memoir
+                <a href="#visuals" class="btn-cinematic px-10 py-4 uppercase tracking-widest text-sm font-bold">
+                    Watch the Trailer
                 </a>
-                <a href="https://audiomack.com/iamnad/album/wheels-in-the-hills" target="_blank" class="px-10 py-4 bg-white/10 hover:bg-white/20 text-white uppercase tracking-widest text-sm font-bold backdrop-blur">
-                    Read the Script
+                <a href="#impact" class="px-10 py-4 bg-white/10 hover:bg-white/20 text-white uppercase tracking-widest text-sm font-bold backdrop-blur">
+                    Discover More
                 </a>
             </div>
         </div>
@@ -123,35 +141,67 @@ f<!DOCTYPE html>
         </div>
     </section>
 
-    <!-- Synopsis Section -->
-    <section id="synopsis" class="py-24 px-6 md:px-12 max-w-6xl mx-auto">
+    <!-- Video Preview Section -->
+    <section id="visuals" class="py-32 bg-[#050507] border-y border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl mb-4">A Cinematic Vision</h2>
+                <div class="line-accent mx-auto"></div>
+                <p class="text-gray-500 uppercase tracking-widest text-xs mt-4">Witness the untouched beauty</p>
+            </div>
+
+            <div class="relative group fade-in">
+                <div class="absolute -inset-4 border border-[#c5a059]/10 rounded-lg pointer-events-none transition-all duration-700 group-hover:border-[#c5a059]/30"></div>
+                
+                <div class="video-frame-container rounded shadow-2xl">
+                    <iframe 
+                        src="https://drive.google.com/file/d/1wwuRfk7e06L-tM8ZyUXsrpSLOn2KivyW/preview" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div class="mt-8 flex justify-between items-center text-gray-400 italic font-light">
+                    <p>Official Feature: "Preserve The Nature"</p>
+                    <div class="flex items-center space-x-4">
+                        <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+                        <p class="text-[#c5a059] not-italic uppercase tracking-widest text-xs font-bold">Nature 4K</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Synopsis Section / Impact -->
+    <section id="impact" class="py-24 px-6 md:px-12 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div class="fade-in">
                 <div class="line-accent"></div>
-                <h2 class="text-4xl md:text-5xl mb-8">A Journey of Complex Agony & Healing Peace</h2>
+                <h2 class="text-4xl md:text-5xl mb-8">Harmony Between Progress and Earth</h2>
                 <p class="text-gray-400 leading-relaxed mb-6 text-lg">
-                    In 1978, Louise, the daughter of a rigid Belgian diplomat, and Jack, a Rwandan returnee from Uganda, found home in each other within the walls of the Hôtel des Mille Collines. 
+                    In an era of rapid transformation, our connection to the environment remains the foundation of our existence. This project explores the delicate balance required to protect our planet's most vital resources.
                 </p>
                 <p class="text-gray-400 leading-relaxed mb-8 text-lg">
-                    What followed was a decades-long odyssey of political betrayal, unspeakable loss, and a secret legacy that would only be revealed through the pages of a final memoir: <span class="text-[#c5a059]">Nakunze Urudashoboka</span>.
+                    From the lush forests to the silent mountains, <span class="text-[#c5a059]">Preserve The Nature</span> is a call to action—a visual testament to why we must act today to safeguard tomorrow.
                 </p>
                 <div class="flex items-center space-x-6">
                     <div class="text-center border-r border-gray-800 pr-6">
-                        <span class="block text-2xl font-bold text-[#c5a059]">1978</span>
-                        <span class="text-xs uppercase tracking-widest text-gray-500">Origins</span>
+                        <span class="block text-2xl font-bold text-[#c5a059]">Global</span>
+                        <span class="text-xs uppercase tracking-widest text-gray-500">Scope</span>
                     </div>
                     <div class="text-center border-r border-gray-800 pr-6">
-                        <span class="block text-2xl font-bold text-[#c5a059]">26 YRS</span>
-                        <span class="text-xs uppercase tracking-widest text-gray-500">Separation</span>
+                        <span class="block text-2xl font-bold text-[#c5a059]">Impact</span>
+                        <span class="text-xs uppercase tracking-widest text-gray-500">Driven</span>
                     </div>
                     <div class="text-center">
-                        <span class="block text-2xl font-bold text-[#c5a059]">L Foundation</span>
-                        <span class="text-xs uppercase tracking-widest text-gray-500">Legacy</span>
+                        <span class="block text-2xl font-bold text-[#c5a059]">Action</span>
+                        <span class="text-xs uppercase tracking-widest text-gray-500">Required</span>
                     </div>
                 </div>
             </div>
             <div class="relative fade-in">
-                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000" alt="Cinematic Visual" class="rounded-sm grayscale hover:grayscale-0 transition duration-1000 shadow-2xl">
+                <img src="https://i.postimg.cc/VNNSg0Lw/Gemini-Generated-Image-jjjqoajjjqoajjjq.png" alt="Nature Project Feature" class="rounded-sm grayscale hover:grayscale-0 transition duration-1000 shadow-2xl">
                 <div class="absolute -bottom-6 -right-6 w-64 h-64 border border-[#c5a059]/20 -z-10"></div>
             </div>
         </div>
@@ -162,34 +212,34 @@ f<!DOCTYPE html>
         <div class="max-w-3xl fade-in">
             <span class="quote-mark">“</span>
             <p class="playfair text-3xl md:text-4xl italic text-gray-200 leading-snug">
-                The love wasn't impossible, Jack. It just had to wait.
+                The Earth does not belong to us: we belong to the Earth.
             </p>
-            <p class="uppercase tracking-widest text-[#c5a059] mt-8 font-bold">— Louise</p>
+            <p class="uppercase tracking-widest text-[#c5a059] mt-8 font-bold">— Conservation Ethos</p>
         </div>
     </section>
 
     <!-- Call to Action -->
     <section class="py-32 text-center bg-black">
         <div class="fade-in">
-            <h2 class="text-3xl md:text-4xl mb-12">Experience the Story That Shook a Nation</h2>
+            <h2 class="text-3xl md:text-4xl mb-12">Be Part of the Sustainable Future</h2>
             <div class="flex flex-col md:flex-row justify-center gap-12">
                 <div class="inline-block group">
-                    <a href="https://audiomack.com/iamnad/album/wheels-in-the-hills" target="_blank" class="block">
+                    <a href="#" class="block">
                         <div class="flex flex-col items-center">
                             <div class="w-20 h-20 rounded-full border border-[#c5a059] flex items-center justify-center mb-6 group-hover:bg-[#c5a059] transition duration-500">
-                                <i class="fas fa-book-open text-[#c5a059] group-hover:text-white text-xl"></i>
+                                <i class="fas fa-leaf text-[#c5a059] group-hover:text-white text-xl"></i>
                             </div>
-                            <span class="uppercase tracking-[0.4em] text-sm text-[#c5a059]">Full Memoir</span>
+                            <span class="uppercase tracking-[0.4em] text-sm text-[#c5a059]">Get Involved</span>
                         </div>
                     </a>
                 </div>
                 <div class="inline-block group">
-                    <a href="https://audiomack.com/iamnad/album/wheels-in-the-hills" target="_blank" class="block">
+                    <a href="#" class="block">
                         <div class="flex flex-col items-center">
                             <div class="w-20 h-20 rounded-full border border-[#c5a059] flex items-center justify-center mb-6 group-hover:bg-[#c5a059] transition duration-500">
-                                <i class="fas fa-file-alt text-[#c5a059] group-hover:text-white text-xl"></i>
+                                <i class="fas fa-globe text-[#c5a059] group-hover:text-white text-xl"></i>
                             </div>
-                            <span class="uppercase tracking-[0.4em] text-sm text-[#c5a059]">Read Script</span>
+                            <span class="uppercase tracking-[0.4em] text-sm text-[#c5a059]">Global Map</span>
                         </div>
                     </a>
                 </div>
@@ -199,9 +249,9 @@ f<!DOCTYPE html>
 
     <!-- Footer -->
     <footer class="py-12 border-t border-gray-900 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:row justify-between items-center text-gray-600 text-sm">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
             <div class="mb-4 md:mb-0 uppercase tracking-widest text-center md:text-left">
-                © 2026 NAD PROJECTS | Directed by Nadjibullah UWABATO
+                © 2026 NAD PROJECTS | PRESERVE THE NATURE
             </div>
             <div class="flex space-x-6">
                 <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
@@ -212,7 +262,6 @@ f<!DOCTYPE html>
     </footer>
 
     <script>
-        // Simple Intersection Observer for scroll animations
         const observerOptions = {
             threshold: 0.1
         };
