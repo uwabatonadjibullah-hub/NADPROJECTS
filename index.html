@@ -113,7 +113,6 @@
             align-items: center;
             justify-content: center;
             transition: opacity 0.6s ease;
-            cursor: pointer;
         }
 
         .video-thumbnail-overlay::after {
@@ -143,6 +142,7 @@
             font-size: 1.5rem;
             background: rgba(197, 160, 89, 0.2);
             backdrop-filter: blur(4px);
+            cursor: pointer;
         }
 
         .video-thumbnail-overlay:hover .play-icon {
@@ -232,9 +232,8 @@
                 <div class="md:col-span-7">
                     <div class="relative group">
                         <div class="video-frame-container rounded shadow-2xl">
-                            <!-- PRESERVE THE NATURE THUMBNAIL -->
-                            <div class="video-thumbnail-overlay" style="background-image: url('https://i.postimg.cc/VNNSg0Lw/Gemini-Generated-Image-jjjqoajjjqoajjjq.png')" onclick="this.style.opacity='0'; setTimeout(() => this.style.display='none', 600)">
-                                <div class="play-icon">
+                            <div class="video-thumbnail-overlay" style="background-image: url('https://i.postimg.cc/VNNSg0Lw/Gemini-Generated-Image-jjjqoajjjqoajjjq.png')">
+                                <div class="play-icon" onclick="this.parentElement.style.opacity='0'; setTimeout(() => this.parentElement.style.display='none', 600)">
                                     <i class="fas fa-play ml-1"></i>
                                 </div>
                             </div>
@@ -257,7 +256,7 @@
             </div>
 
             <!-- Project 3: The Lost Letter -->
-            <div class="grid md:grid-cols-12 gap-12 items-center fade-in">
+            <div class="grid md:grid-cols-12 gap-12 items-center mb-40 fade-in">
                 <div class="md:col-span-5 order-2 md:order-1">
                     <span class="text-[#c5a059] text-xs font-bold uppercase tracking-[0.3em]">Voiceover Narration</span>
                     <h3 class="text-4xl mt-2 mb-6 text-white uppercase">The Lost Letter</h3>
@@ -268,8 +267,8 @@
                 <div class="md:col-span-7 order-1 md:order-2">
                     <div class="relative group">
                         <div class="video-frame-container rounded shadow-2xl">
-                            <div class="video-thumbnail-overlay" style="background-image: url('https://i.postimg.cc/5y5NBLVq/Gemini-Generated-Image-22yvcm22yvcm22yv.png')" onclick="this.style.opacity='0'; setTimeout(() => this.style.display='none', 600)">
-                                <div class="play-icon">
+                            <div class="video-thumbnail-overlay" style="background-image: url('https://i.postimg.cc/5y5NBLVq/Gemini-Generated-Image-22yvcm22yvcm22yv.png')">
+                                <div class="play-icon" onclick="this.parentElement.style.opacity='0'; setTimeout(() => this.parentElement.style.display='none', 600)">
                                     <i class="fas fa-play ml-1"></i>
                                 </div>
                             </div>
@@ -281,6 +280,34 @@
                             </iframe>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Project 4: The Forest -->
+            <div class="grid md:grid-cols-12 gap-12 items-center fade-in">
+                <div class="md:col-span-7">
+                    <div class="relative group">
+                        <div class="video-frame-container rounded shadow-2xl">
+                            <div class="video-thumbnail-overlay" style="background-image: url('https://i.postimg.cc/V6J1K0nR/Black-and-Dark-Space-Photo-You-Tube-Thumbnail.jpg')">
+                                <div class="play-icon" onclick="this.parentElement.style.opacity='0'; setTimeout(() => this.parentElement.style.display='none', 600)">
+                                    <i class="fas fa-play ml-1"></i>
+                                </div>
+                            </div>
+                            <iframe 
+                                src="https://drive.google.com/file/d/1amY76WAMMigG6CDldjN1F1WLHGFAWLDA/preview" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-5">
+                    <span class="text-[#c5a059] text-xs font-bold uppercase tracking-[0.3em]">Cinematic Short</span>
+                    <h3 class="text-4xl mt-2 mb-6 text-white uppercase">The Forest</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        This Projected was created by Ange UMWARIWASE and Theoneste IMANIZABAYO. This Project is a cinematic short video project that emphasizes on the Importance and Beauty of Forests. And the ever existence of the natural world.
+                    </p>
                 </div>
             </div>
         </div>
